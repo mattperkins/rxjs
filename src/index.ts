@@ -9,3 +9,4 @@ var observable = Observable.create((
 observable.subscribe(
     (x:any) => console.log(x)
 )
+
