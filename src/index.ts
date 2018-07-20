@@ -8,6 +8,14 @@ var observable = Observable.create((
 )
 
 observable.subscribe(
-    (x:any) => console.log(x)
+    (x:any) => logItem(x)
 )
+
+function logItem(val:any){
+    var node = document.createElement('li')
+    var textNode = document.createTextNode(val)
+    node.appendChild(textNode)
+    document.getElementById("list").appendChild(node)
+}
+
 
