@@ -3,6 +3,7 @@ import { Observable } from 'rxjs'
 var observable = Observable.create((
     observer: any) => {
         observer.next('Hello, World!')   
+        observer.next('Hello, Universe!')   
     }
 )
 
